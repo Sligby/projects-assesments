@@ -14,6 +14,16 @@ function navAllStories(evt) {
 
 $body.on("click", "#nav-all", navAllStories);
 
+/** Show newstory on click on "submit"  */
+
+function navSubmitClick(evt){
+  console.debug("navSubmitclick", evt);
+  hidePageComponents();
+  $storyForm.show();
+  }
+
+  $navSubmit.on('click', navSubmitClick);
+
 /** Show login/signup on click on "login" */
 
 function navLoginClick(evt) {
